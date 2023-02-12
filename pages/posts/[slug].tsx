@@ -73,6 +73,7 @@ export async function getStaticProps(context: any) {
       post,
       comments,
     },
+    revalidate: 60,
   };
 }
 

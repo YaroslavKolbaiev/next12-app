@@ -30,6 +30,7 @@ export default async function handler(
     try {
       await createPost(newPost);
       res.revalidate('/posts');
+      res.revalidate(`/posts/${slug}`);
       res.status(201);
     } catch (error) {
       res.status(500);
