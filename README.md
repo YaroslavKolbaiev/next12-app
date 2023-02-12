@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## About the project
 
-Full Stack Application build on [Next JS 12](https://nextjs.org/docs) with experimental app dir.
+Full Stack Application build on [Next JS 12](https://nextjs.org/docs).
 
 Deployed with [Vercel](https://vercel.com/).
 
