@@ -48,7 +48,7 @@ export default function NewPost() {
     try {
       axios.post('/api/posts', newPost);
       resetForm();
-      router.replace(`/posts/${generatedFileId}`);
+      router.replace('/posts');
     } catch (error) {
       setFetchError(true);
     }
