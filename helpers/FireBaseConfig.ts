@@ -3,13 +3,13 @@ import { getStorage } from 'firebase/storage';
 import { getAuth } from 'firebase/auth';
 
 const config = {
-  apiKey: process.env.firebase_apikey,
-  authDomain: process.env.firebase_authDomain,
-  projectId: process.env.firebase_projectId,
-  storageBucket: process.env.firebase_storageBucket,
-  messagingSenderId: process.env.firebase_messagingSenderId,
-  appId: process.env.firebase_appId,
-  measurementId: process.env.firebase_measurementId,
+  apiKey: 'AIzaSyDBgCwuBOAvn-3-JOM6BNqfRju6U5gdyas',
+  authDomain: 'my-nextjs-storage.firebaseapp.com',
+  projectId: 'my-nextjs-storage',
+  storageBucket: 'my-nextjs-storage.appspot.com',
+  messagingSenderId: '718032937442',
+  appId: '1:718032937442:web:e739286cf848fcf19c59bb',
+  measurementId: 'G-X2KDT02245',
 };
 
 export const firebaseApp = initializeApp(config);
