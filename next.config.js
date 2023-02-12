@@ -7,7 +7,7 @@ const nextConfig = {
     mongodb_clustername: "cluster0",
     mongodb_database: "posts-app",
     firebase_apikey: "AIzaSyDBgCwuBOAvn-3-JOM6BNqfRju6U5gdyas",
-    firebase_authDomain: "next12-app-six.vercel.app",
+    firebase_authDomain: "my-nextjs-storage.firebaseapp.com",
     firebase_projectId: "my-nextjs-storage",
     firebase_storageBucket: 'my-nextjs-storage.appspot.com',
     firebase_messagingSenderId: '718032937442',
