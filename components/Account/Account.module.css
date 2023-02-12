@@ -1,0 +1,25 @@
+.logoText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+.logoWrapper {
+  position: relative;
+  background: none;
+  border: none;
+  transition: 300ms;
+}
+
+.logoWrapper:hover {
+  transform: scale(1.1);
+}
+
+.logoImage {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
