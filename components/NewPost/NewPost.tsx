@@ -17,16 +17,9 @@ export default function NewPost() {
   const [excerpt, setExcerpt] = useState('');
   const [uploadProgress, setUploadProgress] = useState(-1);
   const fileInputRef = useRef<any>();
-  const [isPosted, setIsPosted] = useState(false);
   const [fetchError, setFetchError] = useState(false);
   const { user } = useContext(UserContext);
   const router = useRouter();
-
-  const switchOffMsg = () => {
-    setTimeout(() => {
-      setIsPosted(false);
-    }, 3000);
-  };
 
   const resetForm = () => {
     setTitle('');
@@ -54,9 +47,7 @@ export default function NewPost() {
 
     try {
       axios.post('/api/posts', newPost);
-      setIsPosted(true);
       resetForm();
-      switchOffMsg();
       router.replace('/posts');
     } catch (error) {
       setFetchError(true);
@@ -171,9 +162,6 @@ export default function NewPost() {
                   Create
                 </button>
               </form>
-              {isPosted && (
-                <div className="notification is-success">New post created</div>
-              )}
               {fetchError && (
                 <div className="notification is-danger">
                   Failed to create post.Please try again
